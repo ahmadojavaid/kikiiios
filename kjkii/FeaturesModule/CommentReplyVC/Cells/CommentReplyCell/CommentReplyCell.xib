@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="CommentReplyCell" customModule="kjkii" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCv-UD-iCG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rde-I4-FKr" customClass="VariableCornerRadiusView" customModule="kjkii" customModuleProvider="target">
+                                <rect key="frame" x="40" y="10" width="270" height="108"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="axF-Qn-ysz">
+                                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ZQf-IG-jBD"/>
+                                            <constraint firstAttribute="width" constant="50" id="enk-Tg-qCO"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jor-MR-zWR" customClass="APLabel" customModule="kjkii" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="10" width="190" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="setWeight" value="bold"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="setSize">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="setColor" value="redText"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfb-6k-iUa" customClass="APLabel" customModule="kjkii" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="41" width="190" height="57"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="setWeight" value="regular"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="setSize">
+                                                <integer key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="setColor" value="darkText"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Jor-MR-zWR" firstAttribute="top" secondItem="Rde-I4-FKr" secondAttribute="top" constant="10" id="8Zj-Nw-ZCG"/>
+                                    <constraint firstItem="axF-Qn-ysz" firstAttribute="leading" secondItem="Rde-I4-FKr" secondAttribute="leading" constant="10" id="AIi-iG-CbQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="yfb-6k-iUa" secondAttribute="trailing" constant="10" id="H3y-cN-F3k"/>
+                                    <constraint firstItem="yfb-6k-iUa" firstAttribute="leading" secondItem="axF-Qn-ysz" secondAttribute="trailing" constant="10" id="c6D-aK-YoX"/>
+                                    <constraint firstItem="yfb-6k-iUa" firstAttribute="top" secondItem="Jor-MR-zWR" secondAttribute="bottom" constant="10" id="dCm-vC-GAH"/>
+                                    <constraint firstAttribute="bottom" secondItem="yfb-6k-iUa" secondAttribute="bottom" constant="10" id="gp4-qW-xMV"/>
+                                    <constraint firstItem="Jor-MR-zWR" firstAttribute="leading" secondItem="axF-Qn-ysz" secondAttribute="trailing" constant="10" id="jQZ-BL-klV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jor-MR-zWR" secondAttribute="trailing" constant="10" id="rt7-l5-fpR"/>
+                                    <constraint firstItem="axF-Qn-ysz" firstAttribute="top" secondItem="Rde-I4-FKr" secondAttribute="top" constant="10" id="yIj-RU-tGk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tLeftRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topRightRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomRightRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="tblBack"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Rde-I4-FKr" secondAttribute="bottom" constant="10" id="ZbV-HQ-pwj"/>
+                            <constraint firstAttribute="trailing" secondItem="Rde-I4-FKr" secondAttribute="trailing" constant="10" id="doM-fm-FYV"/>
+                            <constraint firstItem="Rde-I4-FKr" firstAttribute="leading" secondItem="wCv-UD-iCG" secondAttribute="leading" constant="40" id="fcg-ly-PeN"/>
+                            <constraint firstItem="Rde-I4-FKr" firstAttribute="top" secondItem="wCv-UD-iCG" secondAttribute="top" constant="10" id="sV2-yR-E06"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wCv-UD-iCG" secondAttribute="trailing" id="0DR-Gn-Qnc"/>
+                    <constraint firstAttribute="bottom" secondItem="wCv-UD-iCG" secondAttribute="bottom" id="W4C-aj-t7h"/>
+                    <constraint firstItem="wCv-UD-iCG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="blK-iS-Tgy"/>
+                    <constraint firstItem="wCv-UD-iCG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zJW-ub-wMf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentBody" destination="yfb-6k-iUa" id="0SZ-Ss-VCz"/>
+                <outlet property="userImage" destination="axF-Qn-ysz" id="65I-hU-ESj"/>
+                <outlet property="userName" destination="Jor-MR-zWR" id="3fa-kS-T6k"/>
+            </connections>
+            <point key="canvasLocation" x="105.79710144927537" y="91.741071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="tblBack">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

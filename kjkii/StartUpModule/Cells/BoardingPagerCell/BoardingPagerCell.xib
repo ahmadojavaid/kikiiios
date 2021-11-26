@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BoardingPagerCell" customModule="kjkii" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="669"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="669"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKm-tn-yhJ">
+                        <rect key="frame" x="0.0" y="0.0" width="403" height="669"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_1" translatesAutoresizingMaskIntoConstraints="NO" id="Isn-N5-ylS">
+                                <rect key="frame" x="20" y="10" width="383" height="387"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="387" id="xiN-vu-0Xl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="botLeftRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGr-rT-cQE" userLabel="Spacer1">
+                                <rect key="frame" x="0.0" y="397" width="403" height="53"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ha-mz-lHs" userLabel="Spacer2">
+                                <rect key="frame" x="0.0" y="493" width="403" height="53.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XN-yS-JhX" userLabel="Spacer3">
+                                <rect key="frame" x="0.0" y="589.5" width="403" height="53"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3n-4e-OJz" userLabel="Spacer4">
+                                <rect key="frame" x="0.0" y="642.5" width="403" height="26.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAR-Gn-ncD" customClass="APLabel" customModule="kjkii" customModuleProvider="target">
+                                <rect key="frame" x="20" y="450" width="67" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="setWeight" value="bold"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setSize">
+                                        <integer key="value" value="36"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="setColor" value="redText"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" text="Find your perfect romantic relationship or friendship." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhM-Pm-5EK" customClass="APLabel" customModule="kjkii" customModuleProvider="target">
+                                <rect key="frame" x="20" y="546.5" width="383" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="setWeight" value="regular"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setSize">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="setColor" value="darkText"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUr-Gh-jCz" customClass="APLabel" customModule="kjkii" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="642.5" width="403" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="setWeight" value="regular"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setSize">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="setColor" value="darkText"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99601846930000004" green="0.99642902609999995" blue="0.97962230439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Ha-mz-lHs" firstAttribute="top" secondItem="QAR-Gn-ncD" secondAttribute="bottom" id="1V8-jn-ZGL"/>
+                            <constraint firstAttribute="bottom" secondItem="f3n-4e-OJz" secondAttribute="bottom" id="1kx-dy-SnD"/>
+                            <constraint firstAttribute="trailing" secondItem="Isn-N5-ylS" secondAttribute="trailing" id="2Oz-dW-8Gl"/>
+                            <constraint firstItem="lUr-Gh-jCz" firstAttribute="top" secondItem="5XN-yS-JhX" secondAttribute="bottom" id="5Ju-2p-dEg"/>
+                            <constraint firstItem="uGr-rT-cQE" firstAttribute="top" secondItem="Isn-N5-ylS" secondAttribute="bottom" id="5Ne-fc-LUE"/>
+                            <constraint firstAttribute="trailing" secondItem="lUr-Gh-jCz" secondAttribute="trailing" id="5vD-N1-mM7"/>
+                            <constraint firstItem="5XN-yS-JhX" firstAttribute="leading" secondItem="yKm-tn-yhJ" secondAttribute="leading" id="9kr-3H-sIF"/>
+                            <constraint firstAttribute="trailing" secondItem="KhM-Pm-5EK" secondAttribute="trailing" id="CM7-ke-ddj"/>
+                            <constraint firstAttribute="trailing" secondItem="uGr-rT-cQE" secondAttribute="trailing" id="DRV-0C-f5S"/>
+                            <constraint firstItem="uGr-rT-cQE" firstAttribute="leading" secondItem="yKm-tn-yhJ" secondAttribute="leading" id="GaG-rj-yzZ"/>
+                            <constraint firstItem="lUr-Gh-jCz" firstAttribute="leading" secondItem="yKm-tn-yhJ" secondAttribute="leading" id="HIn-aP-ypI"/>
+                            <constraint firstItem="f3n-4e-OJz" firstAttribute="top" secondItem="lUr-Gh-jCz" secondAttribute="bottom" id="KnZ-3f-5ER"/>
+                            <constraint firstItem="Isn-N5-ylS" firstAttribute="leading" secondItem="yKm-tn-yhJ" secondAttribute="leading" constant="20" id="NFB-Rm-4gW"/>
+                            <constraint firstAttribute="trailing" secondItem="f3n-4e-OJz" secondAttribute="trailing" id="RsP-9C-H0t"/>
+                            <constraint firstItem="QAR-Gn-ncD" firstAttribute="top" secondItem="uGr-rT-cQE" secondAttribute="bottom" id="SYJ-3o-z7E"/>
+                            <constraint firstItem="5XN-yS-JhX" firstAttribute="top" secondItem="KhM-Pm-5EK" secondAttribute="bottom" id="Tnv-BW-MX0"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ha-mz-lHs" secondAttribute="trailing" id="UGr-qw-KuM"/>
+                            <constraint firstItem="6Ha-mz-lHs" firstAttribute="leading" secondItem="yKm-tn-yhJ" secondAttribute="leading" id="Vza-cb-VwT"/>
+                            <constraint firstItem="f3n-4e-OJz" firstAttribute="leading" secondItem="yKm-tn-yhJ" secondAttribute="leading" id="cfJ-rK-sFr"/>
+                            <constraint firstItem="6Ha-mz-lHs" firstAttribute="height" secondItem="uGr-rT-cQE" secondAttribute="height" id="cuB-xJ-hS8"/>
+                            <constraint firstItem="KhM-Pm-5EK" firstAttribute="top" secondItem="6Ha-mz-lHs" secondAttribute="bottom" id="df6-iN-QQR"/>
+                            <constraint firstItem="f3n-4e-OJz" firstAttribute="height" secondItem="uGr-rT-cQE" secondAttribute="height" multiplier="0.5" id="gR9-8k-Al4"/>
+                            <constraint firstItem="KhM-Pm-5EK" firstAttribute="leading" secondItem="yKm-tn-yhJ" secondAttribute="leading" constant="20" id="hwQ-xj-eiY"/>
+                            <constraint firstAttribute="trailing" secondItem="5XN-yS-JhX" secondAttribute="trailing" id="jle-LZ-4xM"/>
+                            <constraint firstItem="QAR-Gn-ncD" firstAttribute="leading" secondItem="yKm-tn-yhJ" secondAttribute="leading" constant="20" id="q1p-nd-ye5"/>
+                            <constraint firstItem="5XN-yS-JhX" firstAttribute="height" secondItem="uGr-rT-cQE" secondAttribute="height" id="uQb-1s-0r4"/>
+                            <constraint firstItem="Isn-N5-ylS" firstAttribute="top" secondItem="yKm-tn-yhJ" secondAttribute="top" constant="10" id="y9f-ks-hJN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="yKm-tn-yhJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Fz0-th-0z1"/>
+                <constraint firstAttribute="trailing" secondItem="yKm-tn-yhJ" secondAttribute="trailing" constant="-29" id="KtX-pT-G1P"/>
+                <constraint firstAttribute="bottom" secondItem="yKm-tn-yhJ" secondAttribute="bottom" id="Vnb-Gx-uaa"/>
+                <constraint firstItem="yKm-tn-yhJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kek-oL-3UR"/>
+            </constraints>
+            <size key="customSize" width="200" height="266"/>
+            <connections>
+                <outlet property="imgView" destination="Isn-N5-ylS" id="B8j-MG-eaH"/>
+                <outlet property="lblDetails1" destination="KhM-Pm-5EK" id="fxa-0z-HpW"/>
+                <outlet property="lblDetails2" destination="lUr-Gh-jCz" id="qc7-yi-son"/>
+                <outlet property="lblTitle" destination="QAR-Gn-ncD" id="4P6-LS-6ZW"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="113.50446428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="onboarding_1" width="500" height="1082"/>
+    </resources>
+</document>

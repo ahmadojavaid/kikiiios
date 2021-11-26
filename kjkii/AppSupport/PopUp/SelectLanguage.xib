@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectLanguage" customModule="kjkii" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hS-Qb-cFl">
+                    <rect key="frame" x="20" y="388" width="374" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPx-gR-2yZ">
+                            <rect key="frame" x="20" y="20" width="143.5" height="24"/>
+                            <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNr-1d-CLy">
+                            <rect key="frame" x="20" y="64" width="344" height="33"/>
+                            <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="17"/>
+                            <state key="normal" title="English">
+                                <color key="titleColor" red="0.094117647060000004" green="0.090196078430000007" blue="0.1019607843" alpha="0.93999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnLangPressed:" destination="-1" eventType="touchUpInside" id="yD6-HF-aQG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="jNr-1d-CLy" firstAttribute="top" secondItem="kPx-gR-2yZ" secondAttribute="bottom" constant="20" id="1V8-vF-kTw"/>
+                        <constraint firstAttribute="trailing" secondItem="jNr-1d-CLy" secondAttribute="trailing" constant="10" id="5PT-K1-ZpU"/>
+                        <constraint firstItem="jNr-1d-CLy" firstAttribute="leading" secondItem="7hS-Qb-cFl" secondAttribute="leading" constant="20" id="XMs-4T-djf"/>
+                        <constraint firstItem="kPx-gR-2yZ" firstAttribute="leading" secondItem="7hS-Qb-cFl" secondAttribute="leading" constant="20" id="Y7s-F8-dqv"/>
+                        <constraint firstItem="kPx-gR-2yZ" firstAttribute="top" secondItem="7hS-Qb-cFl" secondAttribute="top" constant="20" id="b1I-6I-sUc"/>
+                        <constraint firstAttribute="height" constant="120" id="yFv-Z2-P2b"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="0.27159441021126762" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7hS-Qb-cFl" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1HB-KR-CrX"/>
+                <constraint firstItem="7hS-Qb-cFl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Gaf-Ea-qno"/>
+                <constraint firstItem="7hS-Qb-cFl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="a7I-eG-hNT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7hS-Qb-cFl" secondAttribute="trailing" constant="20" id="fXI-iO-1Gv"/>
+            </constraints>
+            <point key="canvasLocation" x="-35" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

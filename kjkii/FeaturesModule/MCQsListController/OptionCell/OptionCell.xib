@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="OptionCell" customModule="kjkii" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-dS-WyT" userLabel="seprator">
+                        <rect key="frame" x="16" y="46" width="343" height="1"/>
+                        <color key="backgroundColor" red="0.89617359640000005" green="0.16947132349999999" blue="0.14587616919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ttW-3P-SIY"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fch-Y9-DxX" customClass="APLabel" customModule="kjkii" customModuleProvider="target">
+                        <rect key="frame" x="20" y="13" width="65" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="setWeight" value="regular"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setSize">
+                                <integer key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="setColor" value="darkText"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_red" translatesAutoresizingMaskIntoConstraints="NO" id="RbD-5z-XDQ">
+                        <rect key="frame" x="333" y="13" width="22" height="21"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.99601846930000004" green="0.99642902609999995" blue="0.97962230439999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="fch-Y9-DxX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6CQ-FN-9eC"/>
+                    <constraint firstItem="fch-Y9-DxX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Apl-y0-a1n"/>
+                    <constraint firstItem="Ncy-dS-WyT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="NYp-Tl-Vnn"/>
+                    <constraint firstAttribute="trailing" secondItem="Ncy-dS-WyT" secondAttribute="trailing" constant="16" id="Z7E-30-5v9"/>
+                    <constraint firstItem="RbD-5z-XDQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="brV-Hs-LpL"/>
+                    <constraint firstAttribute="bottom" secondItem="Ncy-dS-WyT" secondAttribute="bottom" id="pKt-7S-qYq"/>
+                    <constraint firstAttribute="trailing" secondItem="RbD-5z-XDQ" secondAttribute="trailing" constant="20" id="zB2-Ub-LoK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgChecked" destination="RbD-5z-XDQ" id="tJw-p8-M3H"/>
+                <outlet property="label" destination="fch-Y9-DxX" id="fjp-Pr-2Ph"/>
+                <outlet property="sepratorView" destination="Ncy-dS-WyT" id="0AI-7h-MMP"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="88"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_red" width="22" height="21"/>
+    </resources>
+</document>

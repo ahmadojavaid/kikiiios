@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PageCell" customModule="PROXX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="159"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oe1-QU-QBT">
+                        <rect key="frame" x="0.0" y="0.0" width="233" height="159"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZaL-Ik-BIc">
+                                <rect key="frame" x="0.0" y="0.0" width="233" height="159"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="XPO-La-abP">
+                                <rect key="frame" x="106.5" y="69.5" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Found!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zq-P1-NW3">
+                                <rect key="frame" x="85" y="72.5" width="63" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZaL-Ik-BIc" secondAttribute="bottom" id="KdR-73-bjD"/>
+                            <constraint firstItem="9Zq-P1-NW3" firstAttribute="centerX" secondItem="Oe1-QU-QBT" secondAttribute="centerX" id="MTc-et-mG0"/>
+                            <constraint firstItem="XPO-La-abP" firstAttribute="centerX" secondItem="Oe1-QU-QBT" secondAttribute="centerX" id="MjD-Sb-35Q"/>
+                            <constraint firstItem="ZaL-Ik-BIc" firstAttribute="leading" secondItem="Oe1-QU-QBT" secondAttribute="leading" id="c2O-Bp-72b"/>
+                            <constraint firstItem="ZaL-Ik-BIc" firstAttribute="top" secondItem="Oe1-QU-QBT" secondAttribute="top" id="dJS-Ge-7Oe"/>
+                            <constraint firstItem="XPO-La-abP" firstAttribute="centerY" secondItem="Oe1-QU-QBT" secondAttribute="centerY" id="kQX-3f-1Vq"/>
+                            <constraint firstItem="9Zq-P1-NW3" firstAttribute="centerY" secondItem="Oe1-QU-QBT" secondAttribute="centerY" id="y6L-fU-g0H"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaL-Ik-BIc" secondAttribute="trailing" id="ywt-O8-Y1y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Oe1-QU-QBT" secondAttribute="bottom" id="795-Pu-lmU"/>
+                <constraint firstItem="Oe1-QU-QBT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SDb-WV-lfQ"/>
+                <constraint firstAttribute="trailing" secondItem="Oe1-QU-QBT" secondAttribute="trailing" id="TFZ-aS-zDe"/>
+                <constraint firstItem="Oe1-QU-QBT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c0x-ry-aQf"/>
+            </constraints>
+            <size key="customSize" width="233" height="159"/>
+            <connections>
+                <outlet property="activityIndicator" destination="XPO-La-abP" id="azU-IJ-E3P"/>
+                <outlet property="errorLabel" destination="9Zq-P1-NW3" id="j84-ZO-RRV"/>
+                <outlet property="imageView" destination="ZaL-Ik-BIc" id="jXO-Kt-dlk"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="130"/>
+        </collectionViewCell>
+    </objects>
+</document>

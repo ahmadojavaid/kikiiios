@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PagerView" customModule="Dryclean" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="GQ2-zj-I9w" id="lKP-FY-dhU"/>
+                <outlet property="pageControl" destination="bT1-Fi-zJT" id="BrG-5X-uAX"/>
+                <outlet property="pageControlCenterConstraint" destination="vRq-PG-w57" id="CVZ-RF-8R8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZR-G3-2OM">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="2gL-hh-Zxn"/>
+                        <constraint firstAttribute="height" id="deW-3b-vj1"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GQ2-zj-I9w">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="256"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="enQ-w2-a3X">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Wwl-r0-Gki"/>
+                        <outlet property="delegate" destination="-1" id="knA-B2-V91"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="bT1-Fi-zJT">
+                    <rect key="frame" x="160" y="221" width="55" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GQ2-zj-I9w" secondAttribute="bottom" id="5vU-QH-V5f"/>
+                <constraint firstItem="dZR-G3-2OM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="95y-U0-NBm"/>
+                <constraint firstItem="GQ2-zj-I9w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EIs-tJ-flV"/>
+                <constraint firstItem="dZR-G3-2OM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KMV-xE-b3R"/>
+                <constraint firstItem="GQ2-zj-I9w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hf0-ks-cRl"/>
+                <constraint firstAttribute="trailing" secondItem="GQ2-zj-I9w" secondAttribute="trailing" id="nLa-nZ-x9j"/>
+                <constraint firstItem="bT1-Fi-zJT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vRq-PG-w57"/>
+                <constraint firstAttribute="bottom" secondItem="bT1-Fi-zJT" secondAttribute="bottom" constant="-2" id="wnX-XC-8Ao"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="16.800000000000001" y="140.32983508245877"/>
+        </view>
+    </objects>
+</document>

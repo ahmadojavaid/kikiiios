@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-BoldItalic.ttf">
+            <string>Lato-BoldItalic</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialVc" customModule="kjkii" customModuleProvider="target">
+            <connections>
+                <outlet property="socialUrl" destination="3q2-xr-vpK" id="Bj8-FB-Q6E"/>
+                <outlet property="titletxt" destination="45Z-hD-CXr" id="dBq-Qw-t5p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzU-7v-tVi">
+                    <rect key="frame" x="20" y="358" width="374" height="180"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Facebook URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45Z-hD-CXr">
+                            <rect key="frame" x="108" y="15" width="158.5" height="20"/>
+                            <fontDescription key="fontDescription" name="Lato-BoldItalic" family="Lato" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owM-KI-CNz">
+                            <rect key="frame" x="10" y="70" width="354" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-xr-vpK">
+                                    <rect key="frame" x="8" y="0.0" width="338" height="40"/>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="3q2-xr-vpK" secondAttribute="trailing" constant="8" id="3Rc-0p-ggR"/>
+                                <constraint firstAttribute="bottom" secondItem="3q2-xr-vpK" secondAttribute="bottom" id="Cqj-39-dam"/>
+                                <constraint firstItem="3q2-xr-vpK" firstAttribute="leading" secondItem="owM-KI-CNz" secondAttribute="leading" constant="8" id="FRw-t0-w8O"/>
+                                <constraint firstAttribute="height" constant="40" id="Kbc-a4-Ecm"/>
+                                <constraint firstItem="3q2-xr-vpK" firstAttribute="top" secondItem="owM-KI-CNz" secondAttribute="top" id="LkO-Ea-2iw"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="appRed"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42w-A6-PIB">
+                            <rect key="frame" x="320" y="132" width="44" height="33"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                            <state key="normal" title="SAVE">
+                                <color key="titleColor" name="appRed"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSavePressed:" destination="-1" eventType="touchUpInside" id="40E-Cf-Sbe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXf-Rc-nAV">
+                            <rect key="frame" x="237" y="133" width="68" height="32"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                            <state key="normal" title="CANCEL">
+                                <color key="titleColor" name="appRed"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCancelPressed:" destination="-1" eventType="touchUpInside" id="Qmu-cX-QM0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="42w-A6-PIB" firstAttribute="leading" secondItem="QXf-Rc-nAV" secondAttribute="trailing" constant="15" id="4c9-F9-aBm"/>
+                        <constraint firstItem="owM-KI-CNz" firstAttribute="leading" secondItem="gzU-7v-tVi" secondAttribute="leading" constant="10" id="6YQ-5l-VcT"/>
+                        <constraint firstAttribute="height" constant="180" id="Ax4-QQ-gyy"/>
+                        <constraint firstItem="45Z-hD-CXr" firstAttribute="centerX" secondItem="gzU-7v-tVi" secondAttribute="centerX" id="DHO-Fg-JeW"/>
+                        <constraint firstAttribute="bottom" secondItem="QXf-Rc-nAV" secondAttribute="bottom" constant="15" id="Pcu-QT-EZU"/>
+                        <constraint firstAttribute="trailing" secondItem="42w-A6-PIB" secondAttribute="trailing" constant="10" id="U5Z-2S-LmK"/>
+                        <constraint firstItem="45Z-hD-CXr" firstAttribute="top" secondItem="gzU-7v-tVi" secondAttribute="top" constant="15" id="Zkh-Xr-KPx"/>
+                        <constraint firstAttribute="bottom" secondItem="42w-A6-PIB" secondAttribute="bottom" constant="15" id="iPK-8Y-7oe"/>
+                        <constraint firstAttribute="trailing" secondItem="owM-KI-CNz" secondAttribute="trailing" constant="10" id="mG4-Mc-Q5J"/>
+                        <constraint firstItem="owM-KI-CNz" firstAttribute="centerY" secondItem="gzU-7v-tVi" secondAttribute="centerY" id="nKr-hP-zp3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.24452574823943662" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gzU-7v-tVi" secondAttribute="trailing" constant="20" id="AqA-cS-Wd7"/>
+                <constraint firstItem="gzU-7v-tVi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="IYC-w3-vO4"/>
+                <constraint firstItem="gzU-7v-tVi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kcc-pB-M0j"/>
+                <constraint firstItem="gzU-7v-tVi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="saC-Nr-1zr"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="79"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appRed">
+            <color red="0.88599997758865356" green="0.18000000715255737" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

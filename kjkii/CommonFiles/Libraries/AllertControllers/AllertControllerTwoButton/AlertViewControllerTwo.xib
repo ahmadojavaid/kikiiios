@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FiraSans-Medium.ttf">
+            <string>FiraSans-Medium</string>
+        </array>
+        <array key="FiraSans-Regular.ttf">
+            <string>FiraSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertViewControllerTwo" customModule="PolseApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnClose" destination="12i-QK-vnk" id="18A-4f-in8"/>
+                <outlet property="btnCloseWidth" destination="T0i-QH-xRF" id="hcd-sC-b78"/>
+                <outlet property="btnLeft" destination="dlb-Eu-2Ht" id="WaM-O3-nKf"/>
+                <outlet property="btnRight" destination="Kk1-1Q-Qrk" id="0UU-Hb-pAD"/>
+                <outlet property="lblText" destination="RQS-uv-Vbu" id="e09-Dt-lLm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9z-YY-TdH">
+                    <rect key="frame" x="36.5" y="360" width="341" height="176"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIj-Wd-xRS">
+                            <rect key="frame" x="0.0" y="0.0" width="341" height="176"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you really want to delete this class!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQS-uv-Vbu">
+                                    <rect key="frame" x="30" y="40" width="281" height="48"/>
+                                    <fontDescription key="fontDescription" name="FiraSans-Regular" family="Fira Sans" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlb-Eu-2Ht">
+                                    <rect key="frame" x="20" y="118" width="140.5" height="38"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="1Si-9C-cQN"/>
+                                        <constraint firstAttribute="height" constant="38" id="Efs-SL-DFx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="FiraSans-Medium" family="Fira Sans" pointSize="16"/>
+                                    <color key="tintColor" red="0.92805534599999995" green="0.111413531" blue="0.1000616178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.92805534599999995" green="0.111413531" blue="0.1000616178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.92805534599999995" green="0.111413531" blue="0.1000616178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="1Si-9C-cQN"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <mask key="constraints">
+                                            <include reference="1Si-9C-cQN"/>
+                                            <exclude reference="Efs-SL-DFx"/>
+                                        </mask>
+                                    </variation>
+                                    <connections>
+                                        <action selector="btnLeftPressed:" destination="-1" eventType="touchUpInside" id="Z7Y-Lh-Wqr"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk1-1Q-Qrk">
+                                    <rect key="frame" x="180.5" y="118" width="140.5" height="38"/>
+                                    <color key="backgroundColor" red="0.92805534599999995" green="0.111413531" blue="0.1000616178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="FiraSans-Medium" family="Fira Sans" pointSize="16"/>
+                                    <color key="tintColor" red="0.92805534599999995" green="0.111413531" blue="0.1000616178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Yes">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnRightPressed:" destination="-1" eventType="touchUpInside" id="whc-ft-D2Y"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12i-QK-vnk">
+                                    <rect key="frame" x="306" y="0.0" width="35" height="35"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="T0i-QH-xRF"/>
+                                        <constraint firstAttribute="width" secondItem="12i-QK-vnk" secondAttribute="height" multiplier="1:1" id="ejA-aP-gem"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="tintColor" red="0.98190754650000001" green="0.4551108479" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="X">
+                                        <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="18"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnClose:" destination="-1" eventType="touchUpInside" id="k0R-pE-Lf9"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.98190754650000001" green="0.4551108479" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Kk1-1Q-Qrk" firstAttribute="leading" secondItem="dlb-Eu-2Ht" secondAttribute="trailing" constant="20" id="0Js-ac-JcK"/>
+                                <constraint firstAttribute="bottom" secondItem="dlb-Eu-2Ht" secondAttribute="bottom" constant="20" id="1XY-wa-1ny"/>
+                                <constraint firstItem="RQS-uv-Vbu" firstAttribute="leading" secondItem="qIj-Wd-xRS" secondAttribute="leading" constant="30" id="4fN-lD-5Sg"/>
+                                <constraint firstItem="dlb-Eu-2Ht" firstAttribute="top" secondItem="RQS-uv-Vbu" secondAttribute="bottom" constant="30" id="7Fh-LM-3M8"/>
+                                <constraint firstItem="Kk1-1Q-Qrk" firstAttribute="width" secondItem="dlb-Eu-2Ht" secondAttribute="width" id="JNC-dl-6r9"/>
+                                <constraint firstItem="RQS-uv-Vbu" firstAttribute="top" secondItem="qIj-Wd-xRS" secondAttribute="top" constant="40" id="SBu-Sx-FAH"/>
+                                <constraint firstItem="Kk1-1Q-Qrk" firstAttribute="height" secondItem="dlb-Eu-2Ht" secondAttribute="height" id="YpR-fk-wuH"/>
+                                <constraint firstAttribute="trailing" secondItem="Kk1-1Q-Qrk" secondAttribute="trailing" constant="20" id="YrQ-Zj-22t"/>
+                                <constraint firstAttribute="bottom" secondItem="Kk1-1Q-Qrk" secondAttribute="bottom" constant="20" id="apD-FJ-R94"/>
+                                <constraint firstAttribute="trailing" secondItem="12i-QK-vnk" secondAttribute="trailing" id="cFd-vL-MCc"/>
+                                <constraint firstItem="dlb-Eu-2Ht" firstAttribute="leading" secondItem="qIj-Wd-xRS" secondAttribute="leading" constant="20" id="oGq-VM-PuW"/>
+                                <constraint firstItem="12i-QK-vnk" firstAttribute="top" secondItem="qIj-Wd-xRS" secondAttribute="top" id="p4p-c7-7y1"/>
+                                <constraint firstAttribute="trailing" secondItem="RQS-uv-Vbu" secondAttribute="trailing" constant="30" id="vTF-vZ-E9a"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qIj-Wd-xRS" firstAttribute="top" secondItem="r9z-YY-TdH" secondAttribute="top" id="HzW-R6-cHI"/>
+                        <constraint firstAttribute="trailing" secondItem="qIj-Wd-xRS" secondAttribute="trailing" id="MSr-Mu-ANH"/>
+                        <constraint firstItem="qIj-Wd-xRS" firstAttribute="leading" secondItem="r9z-YY-TdH" secondAttribute="leading" id="PnQ-cQ-ktG"/>
+                        <constraint firstAttribute="bottom" secondItem="qIj-Wd-xRS" secondAttribute="bottom" id="QOE-mD-oAi"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.63130217789999998" green="0.63141316179999996" blue="0.63129514460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="r9z-YY-TdH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AFa-bz-llz"/>
+                <constraint firstItem="r9z-YY-TdH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="i5n-yd-Pwb"/>
+                <constraint firstItem="r9z-YY-TdH" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.1" constant="300" id="vPM-kp-qgc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="135" y="89"/>
+        </view>
+    </objects>
+</document>

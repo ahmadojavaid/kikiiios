@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MathPeopleCell" customModule="kjkii" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_2" translatesAutoresizingMaskIntoConstraints="NO" id="fdh-4d-XJa">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="1hN-hZ-D27"/>
+                            <constraint firstAttribute="height" constant="50" id="zxj-W2-xO7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTa-8U-dIv">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXE-b3-gna" customClass="APLabel" customModule="kjkii" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="setWeight" value="regular"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setSize">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="setColor" value="whiteText"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="appRed"/>
+                        <constraints>
+                            <constraint firstItem="oXE-b3-gna" firstAttribute="leading" secondItem="eTa-8U-dIv" secondAttribute="leading" id="VmE-ci-4NZ"/>
+                            <constraint firstAttribute="bottom" secondItem="oXE-b3-gna" secondAttribute="bottom" id="h2o-11-dxM"/>
+                            <constraint firstAttribute="trailing" secondItem="oXE-b3-gna" secondAttribute="trailing" id="oNP-no-NWb"/>
+                            <constraint firstItem="oXE-b3-gna" firstAttribute="top" secondItem="eTa-8U-dIv" secondAttribute="top" id="xgS-KZ-ICt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="eTa-8U-dIv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0gm-DR-nft"/>
+                <constraint firstItem="eTa-8U-dIv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9IF-B3-NpL"/>
+                <constraint firstItem="fdh-4d-XJa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IGO-Zv-pbZ"/>
+                <constraint firstItem="fdh-4d-XJa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dex-Xa-A52"/>
+                <constraint firstAttribute="bottom" secondItem="eTa-8U-dIv" secondAttribute="bottom" id="hUw-0I-0bV"/>
+                <constraint firstAttribute="bottom" secondItem="fdh-4d-XJa" secondAttribute="bottom" id="qHO-7l-Co1"/>
+                <constraint firstAttribute="trailing" secondItem="fdh-4d-XJa" secondAttribute="trailing" id="rUe-R4-o91"/>
+                <constraint firstAttribute="trailing" secondItem="eTa-8U-dIv" secondAttribute="trailing" id="v7e-59-rsb"/>
+            </constraints>
+            <connections>
+                <outlet property="countLBl" destination="oXE-b3-gna" id="WRD-U9-38d"/>
+                <outlet property="countVIew" destination="eTa-8U-dIv" id="pOY-zR-fdz"/>
+                <outlet property="userImage" destination="fdh-4d-XJa" id="E54-DZ-94Y"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="onboarding_2" width="500" height="1082"/>
+        <namedColor name="appRed">
+            <color red="0.88599997758865356" green="0.18000000715255737" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

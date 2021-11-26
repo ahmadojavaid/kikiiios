@@ -1,0 +1,296 @@
+PODS:
+  - AgoraRtcEngine_iOS (3.2.1)
+  - Alamofire (4.9.1)
+  - AvailableHapticFeedback (1.0.2)
+  - BSImagePicker (3.3.1)
+  - Cache (6.0.0)
+  - CountryPickerView (3.1.3)
+  - FacebookCore (0.9.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FacebookLogin (0.9.0):
+    - FacebookCore (~> 0.9.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKLoginKit (~> 5.0)
+  - FBSDKCoreKit (5.15.1):
+    - FBSDKCoreKit/Basics (= 5.15.1)
+    - FBSDKCoreKit/Core (= 5.15.1)
+  - FBSDKCoreKit/Basics (5.15.1)
+  - FBSDKCoreKit/Core (5.15.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.15.1):
+    - FBSDKLoginKit/Login (= 5.15.1)
+  - FBSDKLoginKit/Login (5.15.1):
+    - FBSDKCoreKit (~> 5.0)
+  - Firebase/Analytics (7.1.0):
+    - Firebase/Core
+  - Firebase/Core (7.1.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 7.1.0)
+  - Firebase/CoreOnly (7.1.0):
+    - FirebaseCore (= 7.1.0)
+  - Firebase/Database (7.1.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 7.1.0)
+  - Firebase/DynamicLinks (7.1.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (~> 7.1.0)
+  - Firebase/Messaging (7.1.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 7.1.0)
+  - Firebase/Storage (7.1.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 7.1.0)
+  - FirebaseAnalytics (7.1.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleAppMeasurement (= 7.1.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30906.0)
+  - FirebaseAuth (7.1.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GTMSessionFetcher/Core (~> 1.4)
+  - FirebaseCore (7.1.0):
+    - FirebaseCoreDiagnostics (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.1.0):
+    - GoogleDataTransport (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30906.0)
+  - FirebaseDatabase (7.1.0):
+    - FirebaseCore (~> 7.0)
+    - leveldb-library (~> 1.22)
+  - FirebaseDynamicLinks (7.1.0):
+    - FirebaseCore (~> 7.0)
+  - FirebaseInstallations (7.1.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstanceID (7.1.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - FirebaseMessaging (7.1.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstanceID (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Reachability (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+  - FirebaseStorage (7.1.0):
+    - FirebaseCore (~> 7.0)
+    - GTMSessionFetcher/Core (~> 1.4)
+  - FSPagerView (0.8.3)
+  - GoogleAppMeasurement (7.1.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30906.0)
+  - GoogleDataTransport (8.0.1):
+    - nanopb (~> 2.30906.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.1.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.1.1):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (7.1.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.1.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.1.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.1.1)"
+  - GoogleUtilities/Reachability (7.1.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.1.1):
+    - GoogleUtilities/Logger
+  - GrowingTextView (0.7.2)
+  - GTMSessionFetcher/Core (1.5.0)
+  - Imaginary (5.0.0):
+    - Cache (~> 6.0.0)
+  - IQKeyboardManagerSwift (6.5.4)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
+  - Koloda (5.0.1):
+    - pop (~> 1.0)
+  - KRActivityIndicatorView (3.0.5)
+  - KRProgressHUD (3.4.5):
+    - KRActivityIndicatorView (= 3.0.5)
+  - leveldb-library (1.22)
+  - Lightbox (2.5.0):
+    - Imaginary (~> 5.0.0)
+  - lottie-ios (3.2.1)
+  - MultiSlider (1.10.11):
+    - AvailableHapticFeedback
+    - SweeterSwift
+  - nanopb (2.30906.0):
+    - nanopb/decode (= 2.30906.0)
+    - nanopb/encode (= 2.30906.0)
+  - nanopb/decode (2.30906.0)
+  - nanopb/encode (2.30906.0)
+  - Nuke (9.1.2)
+  - NVActivityIndicatorView (5.0.1):
+    - NVActivityIndicatorView/Base (= 5.0.1)
+  - NVActivityIndicatorView/Base (5.0.1)
+  - pop (1.0.12)
+  - ProgressHUD (13.4)
+  - PromisesObjC (1.2.11)
+  - RangeSeekSlider (1.8.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SweeterSwift (1.1.3)
+  - SwiftyJSON (5.0.0)
+  - TCPickerView (0.2.8)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - AgoraRtcEngine_iOS
+  - Alamofire (~> 4.8)
+  - BSImagePicker
+  - CountryPickerView
+  - FacebookCore
+  - FacebookLogin
+  - Firebase/Analytics
+  - Firebase/Database
+  - Firebase/DynamicLinks
+  - Firebase/Messaging
+  - Firebase/Storage
+  - FirebaseAuth
+  - FSPagerView
+  - GrowingTextView
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - Koloda
+  - KRProgressHUD
+  - Lightbox
+  - lottie-ios
+  - MultiSlider
+  - Nuke
+  - NVActivityIndicatorView
+  - ProgressHUD
+  - RangeSeekSlider
+  - SDWebImage (~> 5.0)
+  - SwiftyJSON
+  - TCPickerView
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - AgoraRtcEngine_iOS
+    - Alamofire
+    - AvailableHapticFeedback
+    - BSImagePicker
+    - Cache
+    - CountryPickerView
+    - FacebookCore
+    - FacebookLogin
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseDatabase
+    - FirebaseDynamicLinks
+    - FirebaseInstallations
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FirebaseStorage
+    - FSPagerView
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleUtilities
+    - GrowingTextView
+    - GTMSessionFetcher
+    - Imaginary
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - Koloda
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - leveldb-library
+    - Lightbox
+    - lottie-ios
+    - MultiSlider
+    - nanopb
+    - Nuke
+    - NVActivityIndicatorView
+    - pop
+    - ProgressHUD
+    - PromisesObjC
+    - RangeSeekSlider
+    - SDWebImage
+    - SweeterSwift
+    - SwiftyJSON
+    - TCPickerView
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: bf8ee53108d31dd9e3b7e448701b9098162c42c7
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AvailableHapticFeedback: 9b21b9f6d3e4566015988b5de35b40abefe6c09a
+  BSImagePicker: 0fe04b574d4d6b81093785d2af6c26227efc8428
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
+  CountryPickerView: 383c09949f7455de9892db7ce3400b10da090150
+  FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
+  FacebookLogin: 6cee9fd6e1fe976fe8f7eec199e27b28b14f5d63
+  FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
+  FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
+  Firebase: 78e8dd2e39d653de6270432ad84fe8b59f7bf4e8
+  FirebaseAnalytics: 7f165a56dea86ddd5b8ce02af3bee982c683405c
+  FirebaseAuth: f82c2cfcc1c107bb0a97735cdbce4eb2a601f710
+  FirebaseCore: 20046127eef0fcb8fa25df7fc12f7b97d4e48611
+  FirebaseCoreDiagnostics: 872cdb9b749b23346dddd5c1014d1babd2257de3
+  FirebaseDatabase: bf02ea57590aaab4e72b9b12b412a4c881ee81e2
+  FirebaseDynamicLinks: dadf4564851de0ecdad2dab7fc2d1c401dcaa406
+  FirebaseInstallations: 3de38553e86171b5f81d83cdeef63473d37bfdb0
+  FirebaseInstanceID: 61e8d10a4192a582c6239378169d10e504ca8d91
+  FirebaseMessaging: 076054895c9260f82c7304cc7709dbf19b8f3e4a
+  FirebaseStorage: 80e2cd5200791540ca544f4dcac5e6b56994fc97
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  GoogleAppMeasurement: 89e1a64593f968713b0506ba1b53b38a154bf9a5
+  GoogleDataTransport: e4085e6762f36a6141738f46b0153473ce57fb18
+  GoogleUtilities: 3dc4ff0d5e4840e2fa8eef0889620e8c33d4218c
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  Imaginary: cf5e3a7dd6ab1dcbd47ba8ce5edf2307c4e99eb3
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
+  Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
+  KRActivityIndicatorView: 912bc0413d98340f384b12a4e1e6aa8f42fb377d
+  KRProgressHUD: df4cdc3a1baf708d4276a089ee34d133fa9a6f3e
+  leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  Lightbox: cc3d5124f024fa8197fd23f913160db1c61a1852
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
+  MultiSlider: 606824c5e1c25091eb64fac673b193276fc46f7a
+  nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
+  Nuke: dd2e6be6a34c042a7861e190632781d11f253026
+  NVActivityIndicatorView: 738e843cb8924e9e4fc3e559d0728031624bf860
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  ProgressHUD: 137a7fc677487c5581668f4490563124fb35c232
+  PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SweeterSwift: d909211f6833405628c8c7c6bf9f8f2e8a0e9df9
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  TCPickerView: fbb8cfb50bd58013dc3d91f13f88a164332ff31d
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 9f09c1670cfd7c981ed3a74b1a610526995054e5
+
+COCOAPODS: 1.10.1
